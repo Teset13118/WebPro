@@ -9,6 +9,7 @@ body{
     width: 100%;
     display: flex;
     padding: 16px;
+    z-index: 1;
 }
 a {
     font-size: 18px;
@@ -27,6 +28,11 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #6463AD;
+    z-index: -2;
+}
+.head{
+    z-index: 0;
+    font-size: 100px;
 }
 .bigbox{
     font-size: 17px;
@@ -51,7 +57,14 @@ header{
     width: auto;
     max-height: 170px;
 }
+.big{
+    max-height: 400px;
+}
 .tagex{
     width: auto;
     max-height: 120px;
+}
+.whale{
+    position: absolute;
+    z-index: 0;
 }

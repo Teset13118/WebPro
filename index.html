@@ -8,12 +8,13 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="">Home</a>
+        <a href="#top">Home</a>
         <a href="#bigbox1">HTML</a>
-        <a href="">CSS</a>
+        <a href="#bigbox2">CSS</a>
+        <img src="pic/IMG_0137.png" class="beluga">
     </div>
     <header>
-        <img src="pic/Whale-Drawing-15.png" class="whale">
+        <img src="pic/Whale-Drawing-15.png" class="whale" id="top">
         <h1 class="head">HTML & CSS</h1>
     </header>
     <div class="bigbox" id="bigbox1">
@@ -75,11 +76,11 @@
                 shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to 
                 unexpected results. So don't do it!</p>
             <h1>Void elements</h1>
-            <p>Some elements have no content and are called void elements. Take the <img> element that we already have in our HTML page:</p>
+            <p>Some elements have no content and are called void elements. Take the &lt;img&gt; element that we already have in our HTML page:</p>
             <div class="codebox">
                 <img src="pic/code4.png" class="codeex">
             </div>
-            <p>This contains two attributes, but there is no closing </img> tag and no inner content. This is because an image element 
+            <p>This contains two attributes, but there is no closing &lt;</img>&gt; tag and no inner content. This is because an image element 
                 doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.</p>
             <h1>Anatomy of an HTML document</h1>
             <p>That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual 
@@ -89,28 +90,28 @@
                 <img src="pic/code5.png" class="codeex big">
             </div>
             <p>Here, we have the following:</p>
-            <!--<ul>
-                <li><!DOCTYPE html> — doctype. It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were 
+            <ul>
+                <li>&lt;!DOCTYPE html&gt; — doctype. It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were 
                     meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic
                      error checking and other useful things. However, these days, they don't do much and are basically just needed to make sure your
                       document behaves correctly. That's all you need to know for now.</li>
-                <li><html></html> — the <html> element. This element wraps all the content on the entire page and is sometimes known as the root element. 
+                <li>&lt;html&gt;&lt;/html&gt; — the &lt;html&gt; element. This element wraps all the content on the entire page and is sometimes known as the root element. 
                     It also includes the lang attribute, setting the primary language of the document.</li>
-                <li><head></head> — the <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the 
+                <li>&lt;head&gt;&lt;/head&gt; — the &lt;head&gt; element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the 
                     content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in 
                     search results, CSS to style our content, character set declarations, and more.</li>
-                <li><meta charset="utf-8"> — This element sets the character set your document should use to UTF-8 which includes most characters from the vast
+                <li>&lt;meta charset="utf-8"&gt; — This element sets the character set your document should use to UTF-8 which includes most characters from the vast
                      majority of written languages. Essentially, it can now handle any textual content you might put on it. There is no reason not to set 
                      this, and it can help avoid some problems later on.</li>
-                <li><meta name="viewport" content="width=device-width"> — This viewport element ensures the page renders at the width of viewport, preventing 
+                <li>&lt;meta name="viewport" content="width=device-width"&gt; — This viewport element ensures the page renders at the width of viewport, preventing 
                     mobile browsers from rendering pages wider than the viewport and then shrinking them down.</li>
-                <li><title></title> — the <title> element. This sets the title of your page, which is the title that appears in the browser tab the page is 
+                <li>&lt;title&gt;&lt;/title&gt; — the &lt;title&gt; element. This sets the title of your page, which is the title that appears in the browser tab the page is 
                     loaded in. It is also used to describe the page when you bookmark/favorite it.</li>
-                <li><body></body> — the <body> element. This contains all the content that you want to show to web users when they visit your page, whether 
+                <li>&lt;body&gt;&lt;/body&gt; — the &lt;body&gt; element. This contains all the content that you want to show to web users when they visit your page, whether 
                     that's text, images, videos, games, playable audio tracks, or whatever else.</li>
-            </ol>-->
+            </ol>
             <h1>Images</h1>
-            <p>Let's turn our attention to the <img> element again:</p>
+            <p>Let's turn our attention to the &lt;img&gt; element again:</p>
             <div class="codebox">
                 <img src="pic/code6.png" class="codeex">
             </div>
@@ -125,7 +126,7 @@
                     attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:</li>
             </ol>
             <img src="pic/tag3.png" class="tagex">
-            <!--<p>The keywords for alt text are "descriptive text". The alt text you write should provide the reader with enough information to have 
+            <p>The keywords for alt text are "descriptive text". The alt text you write should provide the reader with enough information to have 
                 a good idea of what the image conveys. In this example, our current text of "My test image" is no good at all. A much better 
                 alternative for our Firefox logo would be "The Firefox logo: a flaming fox surrounding the Earth."</p>
             <p>Try coming up with some better alt text for your image now.</p>
@@ -133,27 +134,27 @@
             <p>This section will cover some essential HTML elements you'll use for marking up the text.</p>
             <h2>Headings</h2>
             <p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book 
-                has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, <h1> - <h6>, although
-                     you'll commonly only use 3 to 4 at most:</p>-->
+                has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, &lt;h1&gt; - &lt;h6&gt;, although
+                     you'll commonly only use 3 to 4 at most:</p>
             <div class="codebox">
                 <img src="pic/code7.png" class="codeex">
             </div>
             <p>Now try adding a suitable title to your HTML page just above your <img> element.</p>
             <h2>Paragraphs</h2>
-            <p>As explained above, <p> elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:</p>
+            <p>As explained above, &lt;p&gt; elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:</p>
             <div class="codebox">
                 <img src="pic/code8.png" class="codeex">
             </div>
             <p>Add your sample text (you should have it from What will your website look like?) into one or a few paragraphs, placed directly below 
-                your <img> element.</p>
+                your &lt;img&gt; element.</p>
             <h2>Lists</h2>
             <p>A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consists of at least 2 elements.
                  The most common list types are ordered and unordered lists:</p>
             <ol>
-                <li>Unordered lists are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a <ul> element.</li>
-                <li>Ordered lists are for lists where the order of the items does matter, such as a recipe. These are wrapped in an <ol> element.</li>
+                <li>Unordered lists are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a &lt;ul&gt; element.</li>
+                <li>Ordered lists are for lists where the order of the items does matter, such as a recipe. These are wrapped in an &lt;ol&gt; element.</li>
             </ol>
-            <p>Each item inside the lists is put inside an <li> (list item) element.</p>
+            <p>Each item inside the lists is put inside an &lt;li&gt; (list item) element.</p>
             <p>For example, if we wanted to turn the part of the following paragraph fragment into a list</p>
             <div class="codebox">
                 <img src="pic/code9.png" class="codeex">
@@ -164,15 +165,15 @@
             </div>
             <p>Try adding an ordered or unordered list to your example page.</p>
             <h1>Links</h1>
-            <!--<p>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — <a> — "a" being the short form for 
-                "anchor". To make text within your paragraph into a link, follow these steps:</p>-->
-           <!--<ol>
+            <p>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — &lt;a&gt; — "a" being the short form for 
+                "anchor". To make text within your paragraph into a link, follow these steps:</p>
+           <ol>
                 <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
-                <li>Wrap the text in an <a> element, as shown below:</li>
+                <li>Wrap the text in an &lt;a&gt; element, as shown below:</li>
                     <div class="codebox">
                         <img src="pic/code11.png" class="codeex">
                     </div>
-                <li>Give the <a> element an href attribute, as shown below:</li>
+                <li>Give the &lt;a&gt; element an href attribute, as shown below:</li>
                     <div class="codebox">
                         <img src="pic/code12.png" class="codeex">
                     </div>
@@ -180,14 +181,97 @@
                     <div class="codebox">
                         <img src="pic/code13.png" class="codeex">
                     </div>
-            </ol>-->
+            </ol>
             <p>You might get unexpected results if you omit the https:// or http:// part, called the protocol, at the beginning of the web address.
                  After making a link, click it to make sure it is sending you where you wanted it to.</p>
             <p>Add a link to your page now, if you haven't already done so.</p>
         </div>
     </div>
+    <div class="bigbox" id="bigbox2">
+        <div class="smallbox">
+            <h1>CSS basics</h1>
+            <p>CSS (Cascading Style Sheets) is the code that styles web content. CSS basics walks through what you need to get started. 
+                We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) 
+                layout? How do I decorate my webpage with background images and colors?</p>
+            <h1>What is CSS?</h1>
+            <p>Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what 
+                you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:</p>
+            <div class="codebox">
+                <img src="pic/code14.png" class="codeex">
+            </div>
+            <p>Let's try it out! Using a text editor, paste the three lines of CSS (above) into a new file. Save the file as 
+                style.css in a directory named styles.</p>
+            <p>To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change 
+                the appearance of the HTML. (If you haven't been following our project, pause here to read Dealing with files and HTML basics.)</p>
+            <ol>
+                <li>Open your index.html file. Paste the following line in the head (between the &lt;head&gt; and &lt;/head&gt; tags):</li>
+                        <div class="codebox">
+                            <img src="pic/code15.png" class="codeex">
+                        </div>
+                <li>Save index.html and load it in your browser. You should see something like this:</li>
+                        <img src="pic/website-screenshot-styled.png" class="tagex fox">
+            </ol>
+            <p>If your paragraph text is red, congratulations! Your CSS is working.</p>
+            <h2>Anatomy of a CSS ruleset</h2>
+            <p>Let's dissect the CSS code for red paragraph text to understand how it works:</p>
+            <img src="pic/tag4.png" class="tagex fox">
+            <p>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) 
+                Note the names of the individual parts:</p>
+            <h3>Selector</h3>
+            <p>This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <p> elements). 
+                To style a different element, change the selector.</p>
+            <h3>Declaration</h3>
+            <p>This is a single rule like color: red;. It specifies which of the element's properties you want to style.</p>
+            <h3>Properties</h3>
+            <p>These are ways in which you can style an HTML element. (In this example, color is a property of the <p> elements.) 
+                In CSS, you choose which properties you want to affect in the rule.</p>
+            <h3>Property value</h3>
+            <p>To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances 
+                for a given property. (For example, there are many color values in addition to red.)</p>
+            <p>Note the other important parts of the syntax:</p>
+            <ul>
+                <li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
+                <li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+                <li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+            </ul>
+            <p>To modify multiple property values in one ruleset, write them separated by semicolons, like this:</p>
+            <div class="codebox">
+                <img src="pic/code16.png" class="codeex">
+            </div>
+            <h2>Selecting multiple elements</h2>
+            <p>You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors by commas. For example:</p>
+            <div class="codebox">
+                <img src="pic/code17.png" class="codeex">
+            </div>
+            <h2>Different types of selectors</h2>
+            <p>There are many different types of selectors. The examples above use element selectors, which select all elements of a given type. But we can
+                 make more specific selections as well. Here are some of the more common types of selectors:</p>
+            <table>
+                <tr>
+                    <th>Selector name</th>
+                    <th>What does it select</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>Element selector (sometimes called a tag or type selector)</td>
+                    <td>All HTML elements of the specified type.</td>
+                    <td>p
+                        selects &lt;p&gt;</td>
+                </tr>
+                <tr>
+                    <td>ID selector</td>
+                    <td>The element on the page with the specified ID. On a given HTML page, each id value should be unique.</td>
+                    <td>#my-id
+                        selects &lt;p id="my-id"&gt; or &lt;a id="my-id"&gt;</td>
+                </tr>
+            </table>
+    </div>
 </body>
 </html>
+
+
+
+  
   
 
 

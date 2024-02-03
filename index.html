@@ -13,16 +13,17 @@
 <body>
     <div class="navbar">
         <a href="#top">Home</a>
-        <a href="#bigbox1">HTML</a>
-        <a href="#bigbox2">CSS</a>
+        <a href="#bigbox1" onclick="navswaphtml()" id="navhtmlcss" value="HTML">HTML</a>
+        <a href="#bigbox2" onclick="navswapcss()" id="navhtmlcss" value="CSS">CSS</a>
+        <a href="ref.html">References</a>
         <img src="pic/IMG_0137.png" class="beluga">
     </div>
     <header>
         <img src="pic/Whale-Drawing-15.png" class="whale" id="top">
         <h1 class="head">Learning Basics <br>HTML & CSS</h1>
     </header>
-    <div>
-        <button onclick="swap()">swap</button>
+    <div class="boxbtn">
+        <button onclick="swap()" id="button" value="Swap to CSS" class="btn">Swap to CSS</button>
     </div>
     <div class="bigbox1" id="bigbox1">
         <div class="smallbox">
@@ -392,9 +393,6 @@
             <p>The &lt;body> is a block element, meaning it takes up space on the page. The margin applied to a block element will be 
                 respected by other elements on the page. In contrast, images are inline elements, for the auto margin trick to work 
                 on this image, we must give it block-level behavior using display: block;.</p>
-    </div>
-    <div>
-        <h1>hello</h1>
     </div>
 </body>
 </html>

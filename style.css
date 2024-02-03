@@ -12,7 +12,6 @@ body{
     position: fixed;
     width: 100%;
     display: flex;
-    padding: 13px;
     z-index: 2;
     font-weight: bold;
 }
@@ -20,8 +19,13 @@ a {
     font-size: 22px;
     display: block;
     color: white;
-    padding: 16px;
+    padding: 29px;
     text-decoration: none;
+    height: fit-content;
+  }
+  a:hover {
+    background-color: #484799;
+    color: white;
   }
 header{
     color: white;
@@ -35,6 +39,21 @@ header{
     background-color: #6463AD;
     z-index: 2;
 }
+.btn{
+    width: 20%;
+    height: 10%;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 24px;
+    background-color: #312F84;
+    color: azure;
+    border-style: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-weight: bold;
+}
+.boxbtn{
+    text-align: center;
+}
 .head{
     z-index: 0;
     font-size: 100px;
@@ -45,21 +64,41 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
+    padding-top: 60px;
     padding-bottom: 10px;
     background-color: #8483C1;
 }
-.smallbox{
-    width: 85%;
+.bigbox3{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bigbox1{
+    display: flex;
+}
+.bigbox2{
+    display: none;
+}
+.smallbox,.smallboxref{
+    width: 70%;
     background-color: #D5D5ED;
     padding: 20px;
-    margin: 30px;
     margin-bottom: 0px;
     padding-bottom: 20px;
     border-radius: 20px;
     color: #030232;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     z-index: 1;
+}
+.smallboxref a{
+    color: #030232;
+    font-size: 24px;
+}
+.smallboxref a:hover{
+    color: white;
+    font-size: 24px;
+    border-radius: 20px;
 }
 .codebox{
     background-color: #E3E3F3;
@@ -142,7 +181,4 @@ table, th, td{
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 10px); }
     100%   { transform: translate(0, -0px); }    
-}
-  
-  
-  
+} 
